@@ -1,0 +1,23 @@
+input, button {
+    padding: 5px;
+    display: block;
+    margin-top: 20px; 
+}
+
+input {
+    width: 20%;
+}
+
+.btn {
+    background-color: rgb(56, 211, 107);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    width: 5%;
+}
+
+
+.btn:hover {
+    background-color: rgb(40, 143, 19);
+    cursor: pointer;
+}
