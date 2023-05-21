@@ -78,6 +78,7 @@ onAuthStateChanged(auth, (user) => {
         console.log("radom admin")
         admin();
          } else{
+             normalUsers()
          console.log("paprastasis mirtingasis")
          }
          })
@@ -176,6 +177,70 @@ function admin() {
     console.log("gera diena");
 }
 
+
+
+function normalUsers() {
+  const myTitle = document.createElement("h2");
+  const titleLabel = document.createElement("label");
+  const titleInput = document.createElement("input");
+  const categoryLabel = document.createElement("label");
+  const categoryInput = document.createElement("input");
+  const descriptionLabel = document.createElement("label");
+  const descriptionInput = document.createElement("input");
+  const priceLabel = document.createElement("label");
+  const priceInput = document.createElement("input");
+  const imagesLabel = document.createElement("label");
+  const imagesInput = document.createElement("input");
+  const insertButton = document.createElement("button");
+  const updateButton = document.createElement("button");
+  const deleteButton = document.createElement("button");
+  myTitle.textContent = "Skelbimai";
+  titleLabel.setAttribute("for", "postTitle");
+  titleLabel.textContent = "Title";
+  titleInput.setAttribute("id", "postTitle");
+  titleInput.setAttribute("type", "text");
+  titleInput.setAttribute("placeholder", "Enter an Title");
+  categoryLabel.setAttribute("for", "postCategory");
+  categoryLabel.textContent = "Category";
+  categoryInput.setAttribute("id", "postCategory");
+  categoryInput.setAttribute("type", "text");
+  categoryInput.setAttribute("placeholder", "Enter an Category");
+  descriptionLabel.setAttribute("for", "postDescription");
+  descriptionLabel.textContent = "Description";
+  descriptionInput.setAttribute("id", "postDescription");
+  descriptionInput.setAttribute("type", "text");
+  descriptionInput.setAttribute("placeholder", "Enter an Description");
+  priceLabel.setAttribute("for", "postPrice");
+  priceLabel.textContent = "Price";
+  priceInput.setAttribute("id", "postPrice");
+  priceInput.setAttribute("type", "number");
+  priceInput.setAttribute("placeholder", "Enter an Price");
+  imagesLabel.setAttribute("for", "postImages");
+  imagesLabel.textContent = "Images";
+  imagesInput.setAttribute("id", "postImages");
+  imagesInput.setAttribute("type", "text");
+  imagesInput.setAttribute("placeholder", "Enter images link");
+  insertButton.setAttribute("id", "insertButton");
+  insertButton.textContent = "Insert";
+  updateButton.setAttribute("id", "updateButton");
+  updateButton.textContent = "Update";
+  deleteButton.setAttribute("id", "deleteButton");
+  deleteButton.textContent = "Delete";
+  myMain.appendChild(myTitle);
+  myMain.appendChild(titleLabel);
+  myMain.appendChild(titleInput);
+  myMain.appendChild(categoryLabel);
+  myMain.appendChild(categoryInput);
+  myMain.appendChild(descriptionLabel);
+  myMain.appendChild(descriptionInput);
+  myMain.appendChild(priceLabel);
+  myMain.appendChild(priceInput);
+  myMain.appendChild(imagesLabel);
+  myMain.appendChild(imagesInput);
+  myMain.appendChild(insertButton);
+  myMain.appendChild(updateButton);
+  myMain.appendChild(deleteButton);
+}
 
 
 
